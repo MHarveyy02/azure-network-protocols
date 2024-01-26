@@ -36,7 +36,8 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Deploy Azure Virtual Machines that you want to observe and experiment with. Ensure that they are running and accessible.
+Install Wireshark on your local machine or a separate VM that has network connectivity to the Azure VMs.
 </p>
 <br />
 
@@ -44,7 +45,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Navigate to the Azure Portal and access the NSG associated with your Azure VMs.
+Experiment with NSG rules by adding or modifying them. For example, you might create rules to allow or deny specific protocols, ports, or IP ranges.
 </p>
 <br />
 
@@ -52,6 +54,27 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+On the local machine where Wireshark is installed, open the application.
+Start a new capture interface and select the network interface through which traffic between your local machine and Azure VMs flows.
+Begin capturing network traffic.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Perform operations on your Azure VMs that involve network communication. For example, initiate a ping from one VM to another, access a web service, or SSH into a VM.
+Observe the captured packets in Wireshark as they represent the network traffic to and from the Azure VMs.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Stop the packet capture in Wireshark.
+Analyze the captured packets to understand the different types of traffic, including protocols, source and destination IP addresses, ports, and any communication anomalies.
+Correlate your observations with the NSG rules to see how they impact the allowed or denied traffic.
 </p>
 <br />
